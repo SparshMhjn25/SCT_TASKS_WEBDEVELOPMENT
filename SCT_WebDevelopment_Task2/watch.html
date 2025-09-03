@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gaming Stopwatch</title>
+  <link rel="styleSheet" href="watch.css">
+</head>
+<body>
+
+  <h1>⚡ Stopwatch ⚡</h1>
+  <div class="stopwatch" id="display">00:00:00:000</div>
+  
+  <div class="buttons">
+    <button onclick="startStop()">Start</button>
+    <button onclick="pause()">Pause</button>
+    <button onclick="reset()">Reset</button>
+    <button onclick="lap()">Lap</button>
+  </div>
+
+  <div class="laps" id="laps"></div>
+  <script src="watch.js"></script>
+</body>
+</html>

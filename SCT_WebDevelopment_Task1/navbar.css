@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navcontainer {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    height: 6rem;
+    align-items: center;
+    background-color: #ffffff;
+    top: 0;
+    left: 0;
+    right: 0;
+    color: black;
+    z-index: 10;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.buttons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 1.15rem;
+    margin-right: 2rem;
+}
+
+.option {
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.option:hover {
+    color: white;
+    background: #27ae60;
+}
+
+.logo {
+    margin-left: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    color: #27ae60;
+}
+
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16vh 10%;
+    background: linear-gradient(135deg, #064c4e, #0b7d6e);
+    margin-top: 6rem;
+    color: white;
+    flex-wrap: wrap;
+    border-radius: 0 0 25px 25px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1 {
+    font-size: 42px;
+    font-weight: bold;
+    line-height: 1.3;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #e0e0e0;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: 14px 28px;
+    background: white;
+    color: #0b7d6e;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.hero-btn:hover {
+    background: #f1f1f1;
+    transform: translateY(-2px);
+}
+
+.hero-image img {
+    height: 70vh;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+}
+
+.aboutus-page {
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    text-align: left;
+    padding-top: 6rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    color: #333;
+}
+
+.about-header {
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(2rem, 4vw, 4rem);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 2rem;
+    color: #27ae60;
+}
+
+.products-page {
+    font-family: 'Quicksand', sans-serif;
+    width: 100%;
+    margin: 10vh auto;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    text-align: left;
+    color: #333;
+}
+
+.products-header {
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(2rem, 4vw, 4rem);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.groceries {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.prod-display { 
+    text-align: center;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.prod-display:hover {
+    transform: translateY(-5px);
+}
+
+.prod-image {
+    border-radius: 1rem;
+    display: block;
+    height: 20vh;
+    margin-bottom: 0.5rem;
+}
+
+.reviews-page {
+    font-family: 'Quicksand', sans-serif;
+    min-height: 100vh;
+    width: 100%;
+    margin: 10vh auto;
+    line-height: 1.6;
+    font-size: 1.125rem;
+    text-align: left;
+    color: #333;
+}
+
+.reviews-header {
+    font-family: 'Quicksand', sans-serif;
+    font-size: clamp(2rem, 4vw, 4rem);
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: bold;
+    color: #27ae60;
+}
+
+.review-containers {
+    display: flex;
+    gap: 2rem;
+    flex-direction: column;
+    flex: 1 0 auto;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container {
+    border-radius: 0.8rem;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+.contactus-page {
+    padding: 80px 40px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+.contactus-header {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #27ae60;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 3rem;
+    margin: auto;
+    max-width: 1000px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.contact-info h3 {
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 280px;
+    text-align: left;
+}
+
+.contact-form h3 {
+    margin-bottom: 15px;
+    color: #27ae60;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    border: 1px solid #27ae60;
+}
+
+.contact-form textarea {
+    height: 140px;
+    resize: none;
+}
+
+.contact-form button {
+    background: #27ae60;
+    color: white;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #219150;
+    transform: translateY(-2px);
+}
+
+.navcontainer.scrolled {
+    background-color: #064c4e; 
+    color: white;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.navcontainer.scrolled .option {
+    color: white;
+}

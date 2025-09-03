@@ -1,0 +1,90 @@
+    body {
+      margin: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: radial-gradient(circle at top, #0f0f0f, #000000);
+      color: #0ff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    h1 {
+      text-shadow: 0 0 10px #0ff, 0 0 20px #0ff;
+      margin-bottom: 20px;
+    }
+
+    .mode-selection {
+      margin-bottom: 20px;
+    }
+
+    .mode-selection button {
+      background: transparent;
+      border: 2px solid #0ff;
+      color: #0ff;
+      padding: 10px 20px;
+      margin: 0 10px;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .mode-selection button:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
+    }
+
+    .board {
+      display: grid;
+      grid-template-columns: repeat(3, 100px);
+      grid-template-rows: repeat(3, 100px);
+      gap: 8px;
+    }
+
+    .cell {
+      width: 100px;
+      height: 100px;
+      background: rgba(0, 255, 255, 0.05);
+      border: 2px solid #0ff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      cursor: pointer;
+      transition: 0.3s;
+      color: #0ff;
+      text-shadow: 0 0 10px #0ff;
+    }
+
+    .cell:hover {
+      background: rgba(0, 255, 255, 0.2);
+      box-shadow: 0 0 10px #0ff;
+    }
+
+    .status {
+      margin-top: 20px;
+      font-size: 1.2rem;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .restart {
+      margin-top: 15px;
+      padding: 8px 15px;
+      border: 2px solid #0ff;
+      background: transparent;
+      color: #0ff;
+      cursor: pointer;
+      border-radius: 8px;
+      transition: 0.3s;
+      text-shadow: 0 0 5px #0ff;
+    }
+
+    .restart:hover {
+      background: #0ff;
+      color: #000;
+      box-shadow: 0 0 15px #0ff;
+    }

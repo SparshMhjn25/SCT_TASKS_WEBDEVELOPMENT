@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tic-Tac-Toe</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+
+  <div class="mode-selection">
+    <button onclick="setMode('pvp')">Player vs Player</button>
+    <button onclick="setMode('pvc')">Player vs Computer</button>
+  </div>
+
+  <div class="board" id="board"></div>
+  <div class="status" id="status">Choose a mode to start</div>
+  <button class="restart" onclick="restartGame()">Restart</button>
+
+  <script src="sript.js"></script>
+</body>
+</html>
